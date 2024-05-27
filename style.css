@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+}
+/* barra de navegacion */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    position:static;
+  
+    /* background-color: aqua; */
+}
+/* tejidos juarez */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    /* background-color: aqua; */
+    padding: auto;
+ }
+/* link inicio producots nosotros y redes sociales */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    /* justify-content: right; */
+    /* background-color:aqua; */
+}
+
+.nav-links li {
+    position: relative;
+}
+
+/* BARRA DE NAVEGACION  */
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition:  0.3s;
+    
+}
+
+/* hamburguesia */
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-icon .bar {
+    height: 4px;
+    width: 25px;
+    background-color: white;
+    margin: 3px 0;
+    /* background-color: aqua; */
+}
+/* h1 bienvenidos */
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+/* tejiendo emociones */
+h4 {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+/* imagen de tejidos cuadro */
+.hero {
+    background: url('/images/hero.jpg') no-repeat center center/cover;
+    /* color: white; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ 
+}
+/* cuadro de imagen  */
+.hero-content {
+    max-width:800px;
+     /* background-color: aqua  ; */
+}
+
+/* PRODUCTOS DESTACADOS  */
+h2{
+    text-align: left;
+    /* background-color: aqua; */
+    
+}
+
+/*  */
+/* CONTEENIDOOOOO DE LA */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content:center;
+    
+}
+
+.product {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+/* TEXTO DEL TITULO */
+.product h3 {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    text-align: center; /* texto del titulo  */
+     
+}
+
+/* TEXTO DE LA DESCRIPCION */
+
+.product p {
+    font-size: 1rem;
+    color: #050505;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+
+
+/* nosotros titulo */
+h2{
+    font-size: x-large;
+    text-align:left;
+    padding: 30px  ;
+    /* background-color: #ddd; */
+}
+/* nosotros contenido  */
+
+.about-us{
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    text-align: center;
+    font-size:larger;
+    padding: 5px 15px ;
+    text-align:center;
+    /* background-color: aqua; */
+    padding: 10px;
+}
+
+/* buttons */
+.buttons{
+    text-align: center;
+    /* background-color: aqua; */
+     flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* tamaño de los iconos de redes sociales */
+.buttons a {
+    font-size: 50px;
+    justify-content: space-around;
+    /* background-color: aqua; */
+   
+}
+
+
+
+/* FOOTERRRRR */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: static;
+    
+}
+
+x
+
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
